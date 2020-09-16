@@ -1,8 +1,8 @@
-const dbConfig = require('../config/database');
 import { Sequelize, Options, DataTypes } from 'sequelize';
 import { Movie } from '../models/Movie';
+const environment = require('../environment');
 
-const sequelize = new Sequelize(dbConfig as Options);
+const sequelize = new Sequelize(environment.dbConfig as Options);
 
 Movie.init({
     id: {

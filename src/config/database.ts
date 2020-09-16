@@ -1,11 +1,3 @@
-module.exports = {
-    dialect: 'mssql',
-    host: 'localhost',
-    username: 'sa',
-    password: 'DockerDatabase2020',
-    database: 'movies',
-    define: {
-        timestamps: true,
-        underscored: true
-    }
-}
+const environment = require('../environment/index.ts');
+
+module.exports = environment.dbConfig;

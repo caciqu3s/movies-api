@@ -7,4 +7,4 @@ const app: Application = express();
 app.use(express.json());
 app.use(routes);
 
-app.listen(8080, () => console.log('server running'));
+app.listen(9000, () => console.log('server running'));
